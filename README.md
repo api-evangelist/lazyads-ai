@@ -64,18 +64,17 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Lazy Ads provides an AI‑powered platform that automates the entire advertising workflow across major networks such as Meta, Google, TikTok, LinkedIn, Reddit, Apple, Bing, ChatGPT and Snapchat. It lets small businesses and entrepreneurs launch, manage, and optimise ad campaigns without a marketing degree or agency fees. The service offers a free starter tier, transparent pricing, and a marketplace for custom AI agents via its MCP, enabling users to customise strategy, creative generation and budget allocation with AI assistance.
+Lazy Ads AI provides an AI-powered advertising automation platform that helps businesses create, manage, and optimize ad campaigns across multiple networks such as Meta, Google, TikTok, LinkedIn, and more. By leveraging artificial intelligence, it streamlines strategy, copywriting, targeting, and performance optimization, offering a fixed monthly subscription without taking a cut of ad spend. The service aims to make profitable advertising accessible without requiring marketing expertise or agency fees.
 
-**Areas:** Advertising · AI · Automation · Marketing · SaaS · Company
+**Areas:** Advertising · AI · Marketing · Automation · SaaS
 
 ## Lazy Ads on APIs.io
 
 Everything profiled for Lazy Ads is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/lazyads-ai/](https://apis.io/providers/lazyads-ai/)** — or go straight to one of the APIs or properties below.
 
-### APIs (2)
+### APIs (1)
 
-- [LazyAds API](https://apis.io/apis/lazyads-ai/lazyads-api/) — Programmatic access to campaigns, performance, creatives, competitors, account signals, server-side conversion events, and outbound webhooks.
-- [LazyAds API V1 API](https://apis.io/apis/lazyads-ai/lazyads-api-v1-api/) — Programmatic access to campaigns, performance, creatives, competitors, account signals (pixels, conversion-event volume, audiences), server-side conversion…
+- [Lazy Ads API](https://apis.io/apis/lazyads-ai/lazyads-ai-api/) — Lazy Ads API as documented publicly: 54 operations. Contract generated from the documentation by API Evangelist (2026-11-15); not the provider's own document.
 
 ### Published properties
 
@@ -87,12 +86,16 @@ Event-driven and webhook contracts.
 
 - [Lazyads Ai Webhooks](https://apis.io/asyncapis/lazyads-ai/lazyads-ai-webhooks/)
 
-#### JSON Schema (2)
+#### JSON Schema (6)
 
 The data models the API reads and writes.
 
-- [Audience](https://apis.io/schemas/lazyads-ai/lazyads-ai-audience/)
-- [ConversionEvent](https://apis.io/schemas/lazyads-ai/lazyads-ai-conversion-event/)
+- [GetAccountSignalsResponse](https://apis.io/schemas/lazyads-ai/lazyads-ai-get-account-signals-response/)
+- [PatchAdsIdRequest](https://apis.io/schemas/lazyads-ai/lazyads-ai-patch-ads-id-request/)
+- [PatchApiV1AdsAdidRequest](https://apis.io/schemas/lazyads-ai/lazyads-ai-patch-api-v1-ads-adid-request/)
+- [PostApiV1CampaignsBuildRequest](https://apis.io/schemas/lazyads-ai/lazyads-ai-post-api-v1-campaigns-build-request/)
+- [PostApiV1CampaignsRequest](https://apis.io/schemas/lazyads-ai/lazyads-ai-post-api-v1-campaigns-request/)
+- [PostAudiencesRequest](https://apis.io/schemas/lazyads-ai/lazyads-ai-post-audiences-request/)
 
 #### JSON-LD (1)
 
@@ -129,25 +132,24 @@ Links to the company's own pages. This repository publishes no copy of their spe
 - [Getting started](https://lazyads.ai/hermes)
 - [API reference](https://lazyads.ai/docs/api)
 - [Pricing](https://lazyads.ai/pricing)
-- [Support](https://lazyads.ai/contact)
 - [Blog](https://lazyads.ai/blog)
 - [Terms of service](https://lazyads.ai/terms)
 - [Privacy policy](https://lazyads.ai/privacy)
 
 ## API Evangelist rating
 
-**Kin Score 56.1** — strong · rubric 0.28.0 · scored 2026-11-15
+**Kin Score 56.5** — strong · rubric 0.27.0 · scored 2026-11-15
 
 | Facet | Score |
 |---|---|
-| Discoverability | 76.8 |
-| Contract quality | 53.9 |
+| Discoverability | 57.1 |
+| Contract quality | 55.0 |
 | Contract governance | 79.1 |
-| Operational transparency | 16.7 |
-| Developer ergonomics | 47.6 |
-| Access clarity | 59.1 |
+| Operational transparency | 18.4 |
+| Developer ergonomics | 42.9 |
+| Access clarity | 73.2 |
 
-**Agent readiness 24.8** — agent-aware
+**Agent readiness 22.5** — agent-aware
 
 | Agent-readiness dimension | Result |
 |---|---|
@@ -157,7 +159,7 @@ Links to the company's own pages. This repository publishes no copy of their spe
 | MCP Server | documented (partial credit) |
 | Auth Clarity | bearer (partial credit) |
 | Idempotency | — |
-| Error Semantics | derived (partial credit) |
+| Error Semantics | — |
 | OpenAPI Examples | — |
 | Rate Limit Signal | — |
 | Event Surface Described | unknown |
@@ -171,7 +173,7 @@ Links to the company's own pages. This repository publishes no copy of their spe
 | Dynamic Client Registration | — |
 | Agentic Commerce | — |
 | Pagination Ratio | na |
-| Operation Distinctiveness | distinct |
+| Operation Distinctiveness | na |
 | MCP Tool Quality | na |
 
 **Regulatory alignment 28.2** — Horizontal (data, software, accessibility, platform)
